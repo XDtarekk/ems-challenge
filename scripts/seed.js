@@ -18,32 +18,57 @@ const db = new sqlite3.Database(sqlitePath);
 
 const employees = [
   {
-    full_name: 'John Doe'
+    full_name: 'John Doe',
+    phone_number: '123-456-7890',
+    email: 'john.doe@example.com',
+    address: '123 Main St',
+    employee_imgSrc: '/uploads/photos/john_doe.jpg',
+    employee_cv: '/uploads/cvs/john_doe.pdf',
+    date_of_birth: '1990-05-15',
+    salary: 60000
   },
   {
-    full_name: 'Jane Smith'
+    full_name: 'Jane Smith',
+    phone_number: '987-654-3210',
+    email: 'jane.smith@example.com',
+    address: '456 Elm St',
+    employee_imgSrc: '/uploads/photos/jane_smith.jpg',
+    employee_cv: '/uploads/cvs/jane_smith.pdf',
+    date_of_birth: '1992-08-22',
+    salary: 65000
   },
   {
-    full_name: 'Alice Johnson'
-  },
+    full_name: 'Alice Johnson',
+    phone_number: '555-555-5555',
+    email: 'alice.johnson@example.com',
+    address: '789 Oak St',
+    employee_imgSrc: '/uploads/photos/alice_johnson.jpg',
+    employee_cv: '/uploads/cvs/alice_johnson.pdf',
+    date_of_birth: '1985-02-10',
+    salary: 70000
+  }
 ];
+
 
 const timesheets = [
   {
     employee_id: 1,
     start_time: '2025-02-10 08:00:00',
     end_time: '2025-02-10 17:00:00',
+    summary: 'Completed project design and team meeting.'
   },
   {
     employee_id: 2,
     start_time: '2025-02-11 12:00:00',
     end_time: '2025-02-11 17:00:00',
+    summary: 'Worked on frontend components for EMS.'
   },
   {
     employee_id: 3,
     start_time: '2025-02-12 07:00:00',
     end_time: '2025-02-12 16:00:00',
-  },
+    summary: 'Backend integration and testing.'
+  }
 ];
 
 
